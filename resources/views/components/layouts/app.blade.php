@@ -6,9 +6,13 @@
 
         <title>{{ $title ?? 'Page Title' }}</title>
 
+        @fluxAppearance
+
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
         {{ $slot }}
+
+        @fluxScripts
     </body>
 </html>
