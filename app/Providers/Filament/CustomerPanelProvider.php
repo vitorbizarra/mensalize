@@ -31,6 +31,7 @@ class CustomerPanelProvider extends PanelProvider
             ->path('app')
             ->login()
             ->registration()
+            ->topbar(false)
             ->tenant(Organization::class, 'slug')
             ->tenantRegistration(RegisterOrganization::class)
             ->tenantProfile(EditOrganizationProfile::class)
